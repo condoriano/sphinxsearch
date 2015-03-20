@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/scalia/sphinxsearch/downloads.png)](https://packagist.org/packages/scalia/sphinxsearch)
 [![Monthly Downloads](https://poser.pugx.org/scalia/sphinxsearch/d/monthly.png)](https://packagist.org/packages/scalia/sphinxsearch)
 
-Sphinx Search is a package for Laravel 4 which queries Sphinxsearch and integrates with Eloquent.
+Sphinx Search is a package for **Laravel 5** which queries Sphinxsearch and integrates with Eloquent.
 
 
 ## Installation
