@@ -18,7 +18,9 @@ class SphinxSearchServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('scalia/sphinxsearch');
+    $this->publishes([
+        __DIR__.'/../../config/config.php' => config_path('sphinxsearch.php'),
+    ]);
 	}
 
 	/**
@@ -28,7 +30,7 @@ class SphinxSearchServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['sphinxsearch'] = $this->app->share(function($app)
+    $this->app->singleton('sphinxsearch', function($app)
 		{
 			return new SphinxSearch;
 		});
